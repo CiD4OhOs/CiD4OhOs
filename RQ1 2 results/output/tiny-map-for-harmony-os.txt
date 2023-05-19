@@ -1,0 +1,470 @@
+Compatible and target 34
+next file is Haps/tiny-map-for-harmony-os/classes.dex
+Soot started on Thu Dec 09 17:19:36 CST 2021
+Using 'ohos-framework/ohos-4/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Transforming Transforming com.dongyu.tinymap.slice.MainAbilitySlice$3... 
+Transforming Transforming com.dongyu.tinymap.slice.MainAbilitySlice$2... 
+com.dongyu.tinymap.ResourceTable... 
+Transforming com.dongyu.tinymap.TinyMap$MapSource... 
+com.dongyu.tinymap.BuildConfig... 
+Transforming com.dongyu.tinymap.slice.MainAbilitySlice$1... 
+Transforming com.dongyu.tinymap.Element... 
+Transforming com.dongyu.tinymap.TinyMap... 
+Transforming com.dongyu.tinymap.MyApplication... 
+Transforming com.dongyu.tinymap.-$$Lambda$TinyMap$4C0Lid7r40rF2Bh1y0bkMLsyyUc... 
+Transforming com.dongyu.tinymap.TinyMap$1$1... 
+Transforming com.dongyu.tinymap.MainAbility... 
+Transforming com.dongyu.tinymap.TinyMap$1$2... 
+Transforming com.dongyu.tinymap.slice.MainAbilitySlice... 
+Transforming com.dongyu.tinymap.Tile... 
+Transforming com.dongyu.tinymap.slice.MainAbilitySlice$4... 
+Transforming com.dongyu.tinymap.slice.MainAbilitySlice$3$2... 
+Transforming com.dongyu.tinymap.TinyMap$2... 
+Transforming com.dongyu.tinymap.TinyMap$1... 
+Transforming com.dongyu.tinymap.slice.MainAbilitySlice$3$1... 
+Soot finished on Thu Dec 09 17:19:37 CST 2021
+Soot has run for 0 min. 1 sec.
+next file is Haps/tiny-map-for-harmony-os/entry_debug_signed_entry.apk
+Soot started on Thu Dec 09 17:19:37 CST 2021
+Using 'ohos-framework/ohos-4/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.os.Bundle is a phantom class!
+Warning: ohos.abilityshell.AbilityShellActivity is a phantom class!
+Warning: ohos.abilityshell.HarmonyApplication is a phantom class!
+Transforming com.dongyu.tinymap.R$drawable... 
+Transforming com.dongyu.tinymap.R... 
+Transforming com.dongyu.tinymap.ShellMyApplication... 
+Transforming com.dongyu.tinymap.R$string... 
+Transforming com.dongyu.tinymap.MainAbilityShellActivity... 
+Soot finished on Thu Dec 09 17:19:37 CST 2021
+Soot has run for 0 min. 0 sec.
+--------------------------------------------------------------------------------------------------------
+Declared Min Sdk version is: 3
+Declared Target Sdk version is: 4
+Declared Max Sdk version is:  at the moment there is no such one
+Collected 1 OhOs APIs in the primary DEX file
+Collected 82 OhOs APIs in the secondary DEX files
+SDK Check:false
+Found 0 Android APIs (for forward compatibility) that are accessed with protection (SDK Check)
+Found 0 Android APIs (for forward compatibility) that are accessed problematically 
+Found 0 Android APIs (for backward compatibility) that are accessed with protection (SDK Check)
+Found 82 Android APIs (for backward compatibility) that are accessed problematically 
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilitySlice: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: void <init>()>]
+<ohos.aafwk.ability.AbilitySlice: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: void <init>()>
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilityPackage: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.MyApplication: void <init>()>]
+<ohos.aafwk.ability.AbilityPackage: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.MyApplication: void <init>()>
+
+==>Problematic_Backward<ohos.agp.components.Component: void addDrawTask(ohos.agp.components.Component.DrawTask)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>]
+<ohos.agp.components.Component: void addDrawTask(ohos.agp.components.Component.DrawTask)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+
+==>Problematic_Backward<ohos.media.image.ImageSource: ohos.media.image.PixelMap createPixelmap(ohos.media.image.ImageSource.DecodingOptions)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.media.image.ImageSource: ohos.media.image.PixelMap createPixelmap(ohos.media.image.ImageSource.DecodingOptions)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+<ohos.media.image.ImageSource: ohos.media.image.PixelMap createPixelmap(ohos.media.image.ImageSource.DecodingOptions)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<ohos.hiviewdfx.HiLog: int info(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void log(java.lang.String)>]
+<ohos.hiviewdfx.HiLog: int info(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void log(java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.window.dialog.BaseDialog: ohos.agp.window.dialog.BaseDialog setSize(int,int)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>]
+<ohos.agp.window.dialog.BaseDialog: ohos.agp.window.dialog.BaseDialog setSize(int,int)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.ManipulationEvent: ohos.multimodalinput.event.MmiPoint getPointerPosition(int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.ManipulationEvent: ohos.multimodalinput.event.MmiPoint getPointerPosition(int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<java.util.ArrayList: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initTiles(boolean)>, <com.dongyu.tinymap.TinyMap: void initElement(boolean)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<java.util.ArrayList: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initTiles(boolean)>
+<java.util.ArrayList: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initElement(boolean)>
+<java.util.ArrayList: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<java.util.ArrayList: boolean removeIf(java.util.function.Predicate)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initTiles(boolean)>]
+<java.util.ArrayList: boolean removeIf(java.util.function.Predicate)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initTiles(boolean)>
+
+==>Problematic_Backward<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]
+[<com.dongyu.tinymap.Element: float getOriginY()>, <com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.dongyu.tinymap.TinyMap: void zoomOut()>, <com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.Element: void setX(float)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>, <com.dongyu.tinymap.Element: void setOriginX(float)>, <com.dongyu.tinymap.Tile: void setOriginX(float)>, <com.dongyu.tinymap.Tile: void setX(float)>, <com.dongyu.tinymap.Element: float getY()>, <com.dongyu.tinymap.Tile: float getY()>, <com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>, <com.dongyu.tinymap.TinyMap: void zoomIn()>, <com.dongyu.tinymap.Tile: float getOriginY()>]
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Element: float getOriginY()>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomOut()>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setX(float)>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setOriginX(float)>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setOriginX(float)>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setX(float)>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Element: float getY()>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: float getY()>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomIn()>
+<ohos.agp.utils.Point: float getPointY()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: float getOriginY()>
+
+==>Problematic_Backward<ohos.agp.window.dialog.ListDialog: void setOnSingleSelectListener(ohos.agp.window.dialog.IDialog.ClickedListener)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>]
+<ohos.agp.window.dialog.ListDialog: void setOnSingleSelectListener(ohos.agp.window.dialog.IDialog.ClickedListener)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>
+
+==>Problematic_Backward<java.lang.Object: java.lang.Object clone()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$MapSource: com.dongyu.tinymap.TinyMap$MapSource[] values()>]
+<java.lang.Object: java.lang.Object clone()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$MapSource: com.dongyu.tinymap.TinyMap$MapSource[] values()>
+
+==>Problematic_Backward<ohos.agp.components.Component: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,int)>]
+<ohos.agp.components.Component: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,int)>
+
+==>Problematic_Backward<ohos.agp.render.Canvas: void drawPixelMapHolder(ohos.agp.render.PixelMapHolder,float,float,ohos.agp.render.Paint)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>]
+<ohos.agp.render.Canvas: void drawPixelMapHolder(ohos.agp.render.PixelMapHolder,float,float,ohos.agp.render.Paint)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>
+
+==>Problematic_Backward<ohos.agp.window.dialog.ListDialog: void <init>(ohos.app.Context,int)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>]
+<ohos.agp.window.dialog.ListDialog: void <init>(ohos.app.Context,int)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>
+
+==>Problematic_Backward<java.lang.Math: int min(int,int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>]
+<java.lang.Math: int min(int,int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+
+==>Problematic_Backward<ohos.agp.render.PixelMapHolder: void <init>(ohos.media.image.PixelMap)>:[4,5,6,7]
+[<com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap)>, <com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap,float,float)>, <com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap)>, <com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap,float,float)>]
+<ohos.agp.render.PixelMapHolder: void <init>(ohos.media.image.PixelMap)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap)>
+<ohos.agp.render.PixelMapHolder: void <init>(ohos.media.image.PixelMap)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap,float,float)>
+<ohos.agp.render.PixelMapHolder: void <init>(ohos.media.image.PixelMap)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap)>
+<ohos.agp.render.PixelMapHolder: void <init>(ohos.media.image.PixelMap)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap,float,float)>
+
+==>Problematic_Backward<java.lang.Math: double exp(double)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: double[] toLonLat(double,double)>]
+<java.lang.Math: double exp(double)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: double[] toLonLat(double,double)>
+
+==>Problematic_Backward<ohos.media.image.ImageSource.SourceOptions: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.media.image.ImageSource.SourceOptions: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+<ohos.media.image.ImageSource.SourceOptions: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<java.lang.Integer: java.lang.Integer valueOf(int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$1: void run()>]
+<java.lang.Integer: java.lang.Integer valueOf(int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+
+==>Problematic_Backward<java.util.ArrayList: java.lang.Object get(int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>]
+<java.util.ArrayList: java.lang.Object get(int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<java.util.ArrayList: java.lang.Object get(int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>
+
+==>Problematic_Backward<ohos.agp.window.dialog.ListDialog: ohos.agp.window.dialog.ListDialog setItems(java.lang.String[])>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>]
+<ohos.agp.window.dialog.ListDialog: ohos.agp.window.dialog.ListDialog setItems(java.lang.String[])>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>
+
+==>Problematic_Backward<ohos.agp.components.Component: int getHeight()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>]
+<ohos.agp.components.Component: int getHeight()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+
+==>Problematic_Backward<java.util.Iterator: boolean hasNext()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void zoomOut()>, <com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.TinyMap: void zoomIn()>]
+<java.util.Iterator: boolean hasNext()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomOut()>
+<java.util.Iterator: boolean hasNext()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<java.util.Iterator: boolean hasNext()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomIn()>
+
+==>Problematic_Backward<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context)>, <com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.dongyu.tinymap.TinyMap: void zoomOut()>, <com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,int)>, <com.dongyu.tinymap.Element: void setX(float)>, <com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap,float,float)>, <com.dongyu.tinymap.Tile: void setOriginY(float)>, <com.dongyu.tinymap.Element: void setY(float)>, <com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>, <com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>, <com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap,float,float)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>, <com.dongyu.tinymap.Element: void setOriginX(float)>, <com.dongyu.tinymap.Tile: void setOriginX(float)>, <com.dongyu.tinymap.Element: void setOriginY(float)>, <com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap)>, <com.dongyu.tinymap.Tile: void setX(float)>, <com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap)>, <com.dongyu.tinymap.Tile: void setY(float)>, <com.dongyu.tinymap.TinyMap: void zoomIn()>]
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomOut()>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,int)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setX(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap,float,float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setOriginY(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setY(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap,float,float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setOriginX(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setOriginX(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setOriginY(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Element: void <init>(ohos.media.image.PixelMap)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setX(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void <init>(ohos.media.image.PixelMap)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setY(float)>
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomIn()>
+
+==>Problematic_Backward<java.lang.Object: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.R$drawable: void <init>()>, <com.dongyu.tinymap.slice.MainAbilitySlice$4: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>, <com.dongyu.tinymap.TinyMap$1$1: void <init>(com.dongyu.tinymap.TinyMap$1)>, <com.dongyu.tinymap.TinyMap$1$2: void <init>(com.dongyu.tinymap.TinyMap$1)>, <com.dongyu.tinymap.slice.MainAbilitySlice$1: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>, <com.dongyu.tinymap.slice.MainAbilitySlice$3: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>, <com.dongyu.tinymap.TinyMap$1: void <init>(com.dongyu.tinymap.TinyMap)>, <com.dongyu.tinymap.slice.MainAbilitySlice$3$1: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice$3,ohos.agp.window.dialog.ListDialog)>, <com.dongyu.tinymap.slice.MainAbilitySlice$3$2: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice$3,ohos.agp.window.dialog.ListDialog)>, <com.dongyu.tinymap.'-$$Lambda$TinyMap$4C0Lid7r40rF2Bh1y0bkMLsyyUc': void <init>(com.dongyu.tinymap.TinyMap)>, <com.dongyu.tinymap.R$string: void <init>()>, <com.dongyu.tinymap.BuildConfig: void <init>()>, <com.dongyu.tinymap.ResourceTable: void <init>()>, <com.dongyu.tinymap.slice.MainAbilitySlice$2: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>, <com.dongyu.tinymap.R: void <init>()>]
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.R$drawable: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$4: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1$1: void <init>(com.dongyu.tinymap.TinyMap$1)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1$2: void <init>(com.dongyu.tinymap.TinyMap$1)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$1: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void <init>(com.dongyu.tinymap.TinyMap)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3$1: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice$3,ohos.agp.window.dialog.ListDialog)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3$2: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice$3,ohos.agp.window.dialog.ListDialog)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.'-$$Lambda$TinyMap$4C0Lid7r40rF2Bh1y0bkMLsyyUc': void <init>(com.dongyu.tinymap.TinyMap)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.R$string: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.BuildConfig: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.ResourceTable: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$2: void <init>(com.dongyu.tinymap.slice.MainAbilitySlice,com.dongyu.tinymap.TinyMap)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.R: void <init>()>
+
+==>Problematic_Backward<java.util.ArrayList: java.util.Iterator iterator()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void zoomOut()>, <com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.TinyMap: void zoomIn()>]
+<java.util.ArrayList: java.util.Iterator iterator()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomOut()>
+<java.util.ArrayList: java.util.Iterator iterator()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<java.util.ArrayList: java.util.Iterator iterator()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomIn()>
+
+==>Problematic_Backward<ohos.agp.window.dialog.BaseDialog: void hide()>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice$3$2: void onClick(ohos.agp.window.dialog.IDialog,int)>, <com.dongyu.tinymap.slice.MainAbilitySlice$3$1: void onClick(ohos.agp.window.dialog.IDialog,int)>]
+<ohos.agp.window.dialog.BaseDialog: void hide()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3$2: void onClick(ohos.agp.window.dialog.IDialog,int)>
+<ohos.agp.window.dialog.BaseDialog: void hide()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3$1: void onClick(ohos.agp.window.dialog.IDialog,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void <init>(ohos.app.Context)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context)>]
+<ohos.agp.components.Component: void <init>(ohos.app.Context)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context)>
+
+==>Problematic_Backward<ohos.aafwk.ability.Ability: void setMainRoute(java.lang.String)>:[4,5,6,7]
+[<com.dongyu.tinymap.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.Ability: void setMainRoute(java.lang.String)>:[4,5,6,7]--><com.dongyu.tinymap.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<java.util.Iterator: java.lang.Object next()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void zoomOut()>, <com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.TinyMap: void zoomIn()>]
+<java.util.Iterator: java.lang.Object next()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomOut()>
+<java.util.Iterator: java.lang.Object next()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<java.util.Iterator: java.lang.Object next()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomIn()>
+
+==>Problematic_Backward<ohos.agp.components.Component: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>]
+<ohos.agp.components.Component: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>
+
+==>Problematic_Backward<ohos.aafwk.ability.Ability: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.MainAbility: void <init>()>]
+<ohos.aafwk.ability.Ability: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.MainAbility: void <init>()>
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilitySlice: void onStart(ohos.aafwk.content.Intent)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.AbilitySlice: void onStart(ohos.aafwk.content.Intent)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<java.lang.Math: double atan(double)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: double[] toLonLat(double,double)>]
+<java.lang.Math: double atan(double)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: double[] toLonLat(double,double)>
+
+==>Problematic_Backward<ohos.hiviewdfx.HiLogLabel: void <init>(int,int,java.lang.String)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void <clinit>()>]
+<ohos.hiviewdfx.HiLogLabel: void <init>(int,int,java.lang.String)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <clinit>()>
+
+==>Problematic_Backward<java.lang.Math: double floor(double)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>]
+<java.lang.Math: double floor(double)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.TouchEvent: int getAction()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.TouchEvent: int getAction()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setTouchEventListener(ohos.agp.components.Component.TouchEventListener)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>]
+<ohos.agp.components.Component: void setTouchEventListener(ohos.agp.components.Component.TouchEventListener)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setClickedListener(ohos.agp.components.Component.ClickedListener)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.agp.components.Component: void setClickedListener(ohos.agp.components.Component.ClickedListener)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<ohos.agp.components.Component: float getContentPositionX()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.agp.components.Component: float getContentPositionX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<java.util.ArrayList: int size()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>]
+<java.util.ArrayList: int size()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<java.util.ArrayList: int size()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>
+
+==>Problematic_Backward<java.lang.Throwable: java.lang.String toString()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<java.lang.Throwable: java.lang.String toString()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+<java.lang.Throwable: java.lang.String toString()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<ohos.media.image.ImageSource.DecodingOptions: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.media.image.ImageSource.DecodingOptions: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+<ohos.media.image.ImageSource.DecodingOptions: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<java.net.URLConnection: java.io.InputStream getInputStream()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>]
+<java.net.URLConnection: java.io.InputStream getInputStream()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+
+==>Problematic_Backward<java.lang.Math: double log(double)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: double[] toMercator(double,double)>]
+<java.lang.Math: double log(double)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: double[] toMercator(double,double)>
+
+==>Problematic_Backward<ohos.app.Context: ohos.app.dispatcher.TaskDispatcher getUITaskDispatcher()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$1: void run()>]
+<ohos.app.Context: ohos.app.dispatcher.TaskDispatcher getUITaskDispatcher()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+
+==>Problematic_Backward<ohos.media.image.ImageSource: ohos.media.image.ImageSource create(java.io.InputStream,ohos.media.image.ImageSource.SourceOptions)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.media.image.ImageSource: ohos.media.image.ImageSource create(java.io.InputStream,ohos.media.image.ImageSource.SourceOptions)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+<ohos.media.image.ImageSource: ohos.media.image.ImageSource create(java.io.InputStream,ohos.media.image.ImageSource.SourceOptions)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<java.lang.Math: double pow(double,double)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>]
+<java.lang.Math: double pow(double,double)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+
+==>Problematic_Backward<ohos.agp.components.Component: ohos.app.Context getContext()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.TinyMap: void initTiles(boolean)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.agp.components.Component: ohos.app.Context getContext()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<ohos.agp.components.Component: ohos.app.Context getContext()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initTiles(boolean)>
+<ohos.agp.components.Component: ohos.app.Context getContext()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]
+[<com.dongyu.tinymap.Element: float getOriginX()>, <com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.dongyu.tinymap.TinyMap: void zoomOut()>, <com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.Tile: void setOriginY(float)>, <com.dongyu.tinymap.Element: void setY(float)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>, <com.dongyu.tinymap.Element: void setOriginY(float)>, <com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>, <com.dongyu.tinymap.Tile: float getOriginX()>, <com.dongyu.tinymap.Element: float getX()>, <com.dongyu.tinymap.Tile: float getX()>, <com.dongyu.tinymap.Tile: void setY(float)>, <com.dongyu.tinymap.TinyMap: void zoomIn()>]
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Element: float getOriginX()>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomOut()>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setOriginY(float)>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setY(float)>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Element: void setOriginY(float)>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: float getOriginX()>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Element: float getX()>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: float getX()>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.Tile: void setY(float)>
+<ohos.agp.utils.Point: float getPointX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void zoomIn()>
+
+==>Problematic_Backward<ohos.agp.components.Component: int getWidth()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>]
+<ohos.agp.components.Component: int getWidth()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initMapCanvas(boolean)>
+
+==>Problematic_Backward<ohos.app.Context: ohos.app.dispatcher.TaskDispatcher getGlobalTaskDispatcher(ohos.app.dispatcher.task.TaskPriority)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void initTiles(boolean)>]
+<ohos.app.Context: ohos.app.dispatcher.TaskDispatcher getGlobalTaskDispatcher(ohos.app.dispatcher.task.TaskPriority)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initTiles(boolean)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void invalidate()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.dongyu.tinymap.TinyMap$1$2: void run()>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>, <com.dongyu.tinymap.TinyMap$1$1: void run()>]
+<ohos.agp.components.Component: void invalidate()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<ohos.agp.components.Component: void invalidate()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1$2: void run()>
+<ohos.agp.components.Component: void invalidate()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+<ohos.agp.components.Component: void invalidate()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1$1: void run()>
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilitySlice: void setUIContent(int)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.AbilitySlice: void setUIContent(int)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<ohos.agp.window.dialog.CommonDialog: ohos.agp.window.dialog.CommonDialog setButton(int,java.lang.String,ohos.agp.window.dialog.IDialog.ClickedListener)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>]
+<ohos.agp.window.dialog.CommonDialog: ohos.agp.window.dialog.CommonDialog setButton(int,java.lang.String,ohos.agp.window.dialog.IDialog.ClickedListener)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>
+
+==>Problematic_Backward<java.net.URLConnection: void setConnectTimeout(int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>]
+<java.net.URLConnection: void setConnectTimeout(int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+
+==>Problematic_Backward<java.lang.Boolean: boolean parseBoolean(java.lang.String)>:[4,5,6,7]
+[<com.dongyu.tinymap.BuildConfig: void <clinit>()>]
+<java.lang.Boolean: boolean parseBoolean(java.lang.String)>:[4,5,6,7]--><com.dongyu.tinymap.BuildConfig: void <clinit>()>
+
+==>Problematic_Backward<java.lang.Enum: void <init>(java.lang.String,int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$MapSource: void <clinit>()>, <com.dongyu.tinymap.TinyMap$MapSource: void <init>(java.lang.String,int)>]
+<java.lang.Enum: void <init>(java.lang.String,int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$MapSource: void <clinit>()>
+<java.lang.Enum: void <init>(java.lang.String,int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$MapSource: void <init>(java.lang.String,int)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.MmiPoint: float getX()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.MmiPoint: float getX()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$1: void run()>]
+<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+
+==>Problematic_Backward<ohos.aafwk.ability.Ability: void onStart(ohos.aafwk.content.Intent)>:[4,5,6,7]
+[<com.dongyu.tinymap.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.Ability: void onStart(ohos.aafwk.content.Intent)>:[4,5,6,7]--><com.dongyu.tinymap.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<ohos.app.Context: ohos.global.resource.ResourceManager getResourceManager()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.app.Context: ohos.global.resource.ResourceManager getResourceManager()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$MapSource: com.dongyu.tinymap.TinyMap$MapSource valueOf(java.lang.String)>]
+<java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$MapSource: com.dongyu.tinymap.TinyMap$MapSource valueOf(java.lang.String)>
+
+==>Problematic_Backward<java.io.InputStream: void close()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>]
+<java.io.InputStream: void close()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.render.Paint: void <init>()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>]
+<ohos.agp.render.Paint: void <init>()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>
+
+==>Problematic_Backward<ohos.agp.components.Component: float getContentPositionY()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.agp.components.Component: float getContentPositionY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<java.util.ArrayList: boolean add(java.lang.Object)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<java.util.ArrayList: boolean add(java.lang.Object)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<java.util.ArrayList: boolean add(java.lang.Object)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>]
+<ohos.agp.components.Component: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.window.dialog.ListDialog: void show()>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>]
+<ohos.agp.window.dialog.ListDialog: void show()>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice$3: void onClick(ohos.agp.components.Component)>
+
+==>Problematic_Backward<java.lang.Math: double tan(double)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: double[] toMercator(double,double)>]
+<java.lang.Math: double tan(double)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: double[] toMercator(double,double)>
+
+==>Problematic_Backward<java.lang.Class: java.lang.String getName()>:[4,5,6,7]
+[<com.dongyu.tinymap.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.dongyu.tinymap.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<java.lang.Enum: int ordinal()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.TinyMap$2: void <clinit>()>]
+<java.lang.Enum: int ordinal()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<java.lang.Enum: int ordinal()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$2: void <clinit>()>
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilityPackage: void onInitialize()>:[4,5,6,7]
+[<com.dongyu.tinymap.MyApplication: void onInitialize()>]
+<ohos.aafwk.ability.AbilityPackage: void onInitialize()>:[4,5,6,7]--><com.dongyu.tinymap.MyApplication: void onInitialize()>
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilitySlice: ohos.agp.components.Component findComponentById(int)>:[4,5,6,7]
+[<com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.AbilitySlice: ohos.agp.components.Component findComponentById(int)>:[4,5,6,7]--><com.dongyu.tinymap.slice.MainAbilitySlice: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.MmiPoint: float getY()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.MmiPoint: float getY()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<ohos.media.image.common.Size: void <init>(int,int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>, <com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.media.image.common.Size: void <init>(int,int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+<ohos.media.image.common.Size: void <init>(int,int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<ohos.app.dispatcher.TaskDispatcher: ohos.app.dispatcher.task.Revocable asyncDispatch(java.lang.Runnable)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap$1: void run()>, <com.dongyu.tinymap.TinyMap: void initTiles(boolean)>]
+<ohos.app.dispatcher.TaskDispatcher: ohos.app.dispatcher.task.Revocable asyncDispatch(java.lang.Runnable)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap$1: void run()>
+<ohos.app.dispatcher.TaskDispatcher: ohos.app.dispatcher.task.Revocable asyncDispatch(java.lang.Runnable)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void initTiles(boolean)>
+
+==>Problematic_Backward<java.net.URL: java.net.URLConnection openConnection()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>]
+<java.net.URL: java.net.URLConnection openConnection()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+
+==>Problematic_Backward<ohos.global.resource.ResourceManager: ohos.global.resource.Resource getResource(int)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>]
+<ohos.global.resource.ResourceManager: ohos.global.resource.Resource getResource(int)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: void addElement(float,float,int)>
+
+==>Problematic_Backward<java.net.URL: void <init>(java.lang.String)>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>]
+<java.net.URL: void <init>(java.lang.String)>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: ohos.media.image.PixelMap getImagePixmap(java.lang.String)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.TouchEvent: int getIndex()>:[4,5,6,7]
+[<com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.TouchEvent: int getIndex()>:[4,5,6,7]--><com.dongyu.tinymap.TinyMap: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>

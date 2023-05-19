@@ -1,0 +1,618 @@
+Compatible and target 35
+next file is Haps/Swipecards421/classes.dex
+Soot started on Thu Dec 09 17:18:36 CST 2021
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Transforming com.lorentzos.flingswipe.ResourceTable... 
+Transforming com.lorentzos.flingswipe.BuildConfig... 
+Transforming com.lorentzos.flingswipe.FlingCardListener$1... 
+Transforming com.lorentzos.flingswipe.ProviderComponent... 
+Transforming Transforming com.lorentzos.swipecards.MainAbility... 
+Transforming com.lorentzos.swipecards.BaseAdapter... 
+Transforming com.lorentzos.flingswipe.ProviderComponent$1... 
+Transforming com.lorentzos.swipecards.MyApplication... 
+Transforming com.lorentzos.flingswipe.SwipeFlingAdapterView$1... 
+Transforming com.lorentzos.flingswipe.FlingCardListener... 
+Transforming com.lorentzos.flingswipe.AttrUtils... 
+Transforming com.lorentzos.flingswipe.LinearRegression... 
+com.lorentzos.swipecards.BaseAdapter$MyComponentHolder... 
+Transforming com.lorentzos.flingswipe.SwipeFlingAdapterView$AdapterDataSetObserver... 
+Transforming com.lorentzos.swipecards.ResourceTable... 
+Transforming com.lorentzos.flingswipe.FlingCardListener$FlingListener... 
+Transforming com.lorentzos.flingswipe.SwipeFlingAdapterView... 
+Transforming com.lorentzos.swipecards.BuildConfig... 
+Transforming com.lorentzos.flingswipe.LogUtil... 
+Transforming com.lorentzos.flingswipe.SwipeFlingAdapterView$OnItemClickListener... 
+Transforming com.lorentzos.flingswipe.SwipeFlingAdapterView$onFlingListener... 
+Transforming com.lorentzos.flingswipe.BaseFlingAdapterView... 
+Soot finished on Thu Dec 09 17:18:37 CST 2021
+Soot has run for 0 min. 1 sec.
+next file is Haps/Swipecards421/entry_debug_signed_entry.apk
+Soot started on Thu Dec 09 17:18:37 CST 2021
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.os.Bundle is a phantom class!
+Warning: ohos.abilityshell.AbilityShellActivity is a phantom class!
+Warning: ohos.abilityshell.HarmonyApplication is a phantom class!
+Transforming com.lorentzos.swipecards.R$drawable... 
+Transforming com.lorentzos.swipecards.R$string... 
+Transforming com.lorentzos.swipecards.ShellMyApplication... 
+Transforming com.lorentzos.swipecards.MainAbilityShellActivity... 
+Transforming com.lorentzos.swipecards.R... 
+Soot finished on Thu Dec 09 17:18:37 CST 2021
+Soot has run for 0 min. 0 sec.
+--------------------------------------------------------------------------------------------------------
+Declared Min Sdk version is: 3
+Declared Target Sdk version is: 5
+Declared Max Sdk version is:  at the moment there is no such one
+Collected 1 OhOs APIs in the primary DEX file
+Collected 119 OhOs APIs in the secondary DEX files
+SDK Check:false
+Found 0 Android APIs (for forward compatibility) that are accessed with protection (SDK Check)
+Found 0 Android APIs (for forward compatibility) that are accessed problematically 
+Found 0 Android APIs (for backward compatibility) that are accessed with protection (SDK Check)
+Found 118 Android APIs (for backward compatibility) that are accessed problematically 
+
+==>Problematic_Backward<ohos.agp.components.Component: float getContentPositionY()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>]
+<ohos.agp.components.Component: float getContentPositionY()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<ohos.agp.components.Component: float getContentPositionY()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>
+
+==>Problematic_Backward<java.util.List: void clear()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>]
+<java.util.List: void clear()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>
+
+==>Problematic_Backward<java.lang.Math: double sqrt(double)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LinearRegression: double interceptStdErr()>, <com.lorentzos.flingswipe.LinearRegression: double slopeStdErr()>]
+<java.lang.Math: double sqrt(double)>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: double interceptStdErr()>
+<java.lang.Math: double sqrt(double)>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: double slopeStdErr()>
+
+==>Problematic_Backward<ohos.agp.components.LayoutScatter: ohos.agp.components.LayoutScatter getInstance(ohos.app.Context)>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>]
+<ohos.agp.components.LayoutScatter: ohos.agp.components.LayoutScatter getInstance(ohos.app.Context)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setBindStateChangedListener(ohos.agp.components.Component.BindStateChangedListener)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>]
+<ohos.agp.components.Component: void setBindStateChangedListener(ohos.agp.components.Component.BindStateChangedListener)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: ohos.agp.components.Component getComponentAt(int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>, <com.lorentzos.flingswipe.SwipeFlingAdapterView: void onRefreshed(ohos.agp.components.Component)>, <com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>, <com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>]
+<ohos.agp.components.ComponentContainer: ohos.agp.components.Component getComponentAt(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>
+<ohos.agp.components.ComponentContainer: ohos.agp.components.Component getComponentAt(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void onRefreshed(ohos.agp.components.Component)>
+<ohos.agp.components.ComponentContainer: ohos.agp.components.Component getComponentAt(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>
+<ohos.agp.components.ComponentContainer: ohos.agp.components.Component getComponentAt(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveToY(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveToY(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<java.util.List: boolean remove(java.lang.Object)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>]
+<java.util.List: boolean remove(java.lang.Object)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>
+
+==>Problematic_Backward<java.lang.StringBuilder: java.lang.String toString()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>]
+<java.lang.StringBuilder: java.lang.String toString()>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>
+
+==>Problematic_Backward<java.util.Optional: boolean isPresent()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>, <com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>, <com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>, <com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>, <com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<java.util.Optional: boolean isPresent()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>
+<java.util.Optional: boolean isPresent()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.util.Optional: boolean isPresent()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.util.Optional: boolean isPresent()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>
+<java.util.Optional: boolean isPresent()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>
+<java.util.Optional: boolean isPresent()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>
+<java.util.Optional: boolean isPresent()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<ohos.agp.components.Attr: int getIntegerValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<ohos.agp.components.Attr: int getIntegerValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<ohos.app.Context: ohos.global.resource.ResourceManager getResourceManager()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>]
+<ohos.app.Context: ohos.global.resource.ResourceManager getResourceManager()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: int getChildIndex(ohos.agp.components.Component)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>]
+<ohos.agp.components.ComponentContainer: int getChildIndex(ohos.agp.components.Component)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>
+
+==>Problematic_Backward<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>, <com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>, <com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>, <com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>, <com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>
+<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>
+<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>
+<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>
+<ohos.agp.components.AttrSet: java.util.Optional getAttr(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilityPackage: void <init>()>:[4,5,6,7]
+[<com.lorentzos.swipecards.MyApplication: void <init>()>]
+<ohos.aafwk.ability.AbilityPackage: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.MyApplication: void <init>()>
+
+==>Problematic_Backward<ohos.aafwk.ability.Ability: ohos.agp.components.Component findComponentById(int)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.Ability: ohos.agp.components.Component findComponentById(int)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.TouchEvent: int getAction()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.TouchEvent: int getAction()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<ohos.agp.components.Component: ohos.agp.animation.AnimatorProperty createAnimatorProperty()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>, <com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<ohos.agp.components.Component: ohos.agp.animation.AnimatorProperty createAnimatorProperty()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+<ohos.agp.components.Component: ohos.agp.animation.AnimatorProperty createAnimatorProperty()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<ohos.agp.components.Attr: ohos.agp.utils.Color getColorValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<ohos.agp.components.Attr: ohos.agp.utils.Color getColorValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void addDrawTask(ohos.agp.components.Component.DrawTask)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>]
+<ohos.agp.components.Component: void addDrawTask(ohos.agp.components.Component.DrawTask)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+
+==>Problematic_Backward<ohos.aafwk.ability.Ability: void setUIContent(int)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.Ability: void setUIContent(int)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<ohos.agp.components.Component: int getHeight()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>, <com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>]
+<ohos.agp.components.Component: int getHeight()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>
+<ohos.agp.components.Component: int getHeight()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>
+
+==>Problematic_Backward<ohos.hiviewdfx.HiLog: int info(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LogUtil: void info(java.lang.String,java.lang.String)>]
+<ohos.hiviewdfx.HiLog: int info(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]--><com.lorentzos.flingswipe.LogUtil: void info(java.lang.String,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setTouchEventListener(ohos.agp.components.Component.TouchEventListener)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>]
+<ohos.agp.components.Component: void setTouchEventListener(ohos.agp.components.Component.TouchEventListener)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: void notifyDataChanged()>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: void setData(java.util.List)>]
+<ohos.agp.components.BaseItemProvider: void notifyDataChanged()>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: void setData(java.util.List)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>, <com.lorentzos.flingswipe.SwipeFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>, <com.lorentzos.flingswipe.SwipeFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>, <com.lorentzos.flingswipe.BaseFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>, <com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>]
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.BaseFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>
+
+==>Problematic_Backward<ohos.agp.components.Component: java.lang.Object getTag()>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>]
+<ohos.agp.components.Component: java.lang.Object getTag()>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void removeComponentAt(int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>]
+<ohos.agp.components.ComponentContainer: void removeComponentAt(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>
+
+==>Problematic_Backward<java.lang.RuntimeException: void <init>(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void init(ohos.app.Context,ohos.agp.components.BaseItemProvider)>]
+<java.lang.RuntimeException: void <init>(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void init(ohos.app.Context,ohos.agp.components.BaseItemProvider)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setTag(java.lang.Object)>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>]
+<ohos.agp.components.Component: void setTag(java.lang.Object)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>
+
+==>Problematic_Backward<ohos.agp.components.LayoutScatter: ohos.agp.components.Component parse(int,ohos.agp.components.ComponentContainer,boolean)>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>]
+<ohos.agp.components.LayoutScatter: ohos.agp.components.Component parse(int,ohos.agp.components.ComponentContainer,boolean)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>
+
+==>Problematic_Backward<ohos.hiviewdfx.HiLog: int warn(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LogUtil: void warn(java.lang.String,java.lang.String)>]
+<ohos.hiviewdfx.HiLog: int warn(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]--><com.lorentzos.flingswipe.LogUtil: void warn(java.lang.String,java.lang.String)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.MmiPoint: float getY()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.MmiPoint: float getY()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<java.lang.String: java.lang.String valueOf(int)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>]
+<java.lang.String: java.lang.String valueOf(int)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>
+
+==>Problematic_Backward<java.lang.Class: java.lang.String getName()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>, <com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>, <com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>, <com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>, <com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>, <com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>
+<java.lang.Class: java.lang.String getName()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveToX(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveToX(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<java.util.Optional: java.lang.Object get()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>, <com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>, <com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>, <com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>, <com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<java.util.Optional: java.lang.Object get()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>
+<java.util.Optional: java.lang.Object get()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.util.Optional: java.lang.Object get()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.util.Optional: java.lang.Object get()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>
+<java.util.Optional: java.lang.Object get()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>
+<java.util.Optional: java.lang.Object get()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>
+<java.util.Optional: java.lang.Object get()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<java.util.List: boolean add(java.lang.Object)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>, <com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>]
+<java.util.List: boolean add(java.lang.Object)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>
+<java.util.List: boolean add(java.lang.Object)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setLayoutRefreshedListener(ohos.agp.components.Component.LayoutRefreshedListener)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>]
+<ohos.agp.components.Component: void setLayoutRefreshedListener(ohos.agp.components.Component.LayoutRefreshedListener)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.BaseFlingAdapterView: void <init>(ohos.app.Context)>]
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context)>:[4,5,6,7]--><com.lorentzos.flingswipe.BaseFlingAdapterView: void <init>(ohos.app.Context)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setTranslationY(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.agp.components.Component: void setTranslationY(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: void notifyDataSetItemInserted(int)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>]
+<ohos.agp.components.BaseItemProvider: void notifyDataSetItemInserted(int)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>
+
+==>Problematic_Backward<ohos.hiviewdfx.HiLogLabel: void <init>(int,int,java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LogUtil: void <clinit>()>]
+<ohos.hiviewdfx.HiLogLabel: void <init>(int,int,java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.LogUtil: void <clinit>()>
+
+==>Problematic_Backward<java.lang.Math: double cos(double)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>]
+<java.lang.Math: double cos(double)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>
+
+==>Problematic_Backward<ohos.media.image.ImageSource.DecodingOptions: void <init>()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>]
+<ohos.media.image.ImageSource.DecodingOptions: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+
+==>Problematic_Backward<ohos.aafwk.ability.Ability: void onStart(ohos.aafwk.content.Intent)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.ability.Ability: void onStart(ohos.aafwk.content.Intent)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setContentPositionY(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>]
+<ohos.agp.components.Component: void setContentPositionY(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: void <init>()>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: void <init>(ohos.app.Context)>]
+<ohos.agp.components.BaseItemProvider: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: void <init>(ohos.app.Context)>
+
+==>Problematic_Backward<ohos.media.image.ImageSource.SourceOptions: void <init>()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>]
+<ohos.media.image.ImageSource.SourceOptions: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: int getId()>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onClick(ohos.agp.components.Component)>]
+<ohos.agp.components.Component: int getId()>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onClick(ohos.agp.components.Component)>
+
+==>Problematic_Backward<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: ohos.agp.utils.Point getLastPoint()>]
+<ohos.agp.utils.Point: void <init>(float,float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: ohos.agp.utils.Point getLastPoint()>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void removeComponents(int,int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void onRefreshed(ohos.agp.components.Component)>]
+<ohos.agp.components.ComponentContainer: void removeComponents(int,int)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void onRefreshed(ohos.agp.components.Component)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void addComponent(ohos.agp.components.Component,int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>, <com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>]
+<ohos.agp.components.ComponentContainer: void addComponent(ohos.agp.components.Component,int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>
+<ohos.agp.components.ComponentContainer: void addComponent(ohos.agp.components.Component,int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>
+
+==>Problematic_Backward<ohos.hiviewdfx.HiLog: int error(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LogUtil: void error(java.lang.String,java.lang.String)>]
+<ohos.hiviewdfx.HiLog: int error(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]--><com.lorentzos.flingswipe.LogUtil: void error(java.lang.String,java.lang.String)>
+
+==>Problematic_Backward<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>]
+<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>
+
+==>Problematic_Backward<ohos.agp.components.Attr: int getDimensionValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<ohos.agp.components.Attr: int getDimensionValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<java.lang.Double: java.lang.Double valueOf(double)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>]
+<java.lang.Double: java.lang.Double valueOf(double)>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>
+
+==>Problematic_Backward<ohos.agp.components.Component: int getWidth()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>, <com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>]
+<ohos.agp.components.Component: int getWidth()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>
+<ohos.agp.components.Component: int getWidth()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty rotate(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>, <com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty rotate(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty rotate(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<java.lang.Math: float abs(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<java.lang.Math: float abs(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<ohos.hiviewdfx.HiLog: int debug(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LogUtil: void debug(java.lang.String,java.lang.String)>]
+<ohos.hiviewdfx.HiLog: int debug(ohos.hiviewdfx.HiLogLabel,java.lang.String,java.lang.Object[])>:[4,5,6,7]--><com.lorentzos.flingswipe.LogUtil: void debug(java.lang.String,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.components.Attr: java.lang.String getStringValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>]
+<ohos.agp.components.Attr: java.lang.String getStringValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: void removeDataSubscriber(ohos.agp.database.DataSetSubscriber)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void setItemProvider(ohos.agp.components.BaseItemProvider)>, <com.lorentzos.flingswipe.ProviderComponent: void onComponentUnboundFromWindow(ohos.agp.components.Component)>]
+<ohos.agp.components.BaseItemProvider: void removeDataSubscriber(ohos.agp.database.DataSetSubscriber)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void setItemProvider(ohos.agp.components.BaseItemProvider)>
+<ohos.agp.components.BaseItemProvider: void removeDataSubscriber(ohos.agp.database.DataSetSubscriber)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void onComponentUnboundFromWindow(ohos.agp.components.Component)>
+
+==>Problematic_Backward<java.util.ArrayList: int size()>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>]
+<java.util.ArrayList: int size()>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>
+
+==>Problematic_Backward<java.util.ArrayList: boolean add(java.lang.Object)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>, <com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>]
+<java.util.ArrayList: boolean add(java.lang.Object)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+<java.util.ArrayList: boolean add(java.lang.Object)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>
+
+==>Problematic_Backward<ohos.agp.database.DataSetSubscriber: void <init>()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView$AdapterDataSetObserver: void <init>(com.lorentzos.flingswipe.SwipeFlingAdapterView)>, <com.lorentzos.flingswipe.ProviderComponent$1: void <init>(com.lorentzos.flingswipe.ProviderComponent)>]
+<ohos.agp.database.DataSetSubscriber: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView$AdapterDataSetObserver: void <init>(com.lorentzos.flingswipe.SwipeFlingAdapterView)>
+<ohos.agp.database.DataSetSubscriber: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent$1: void <init>(com.lorentzos.flingswipe.ProviderComponent)>
+
+==>Problematic_Backward<java.util.ArrayList: java.lang.Object remove(int)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void removeFirstObjectInAdapter()>]
+<java.util.ArrayList: java.lang.Object remove(int)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void removeFirstObjectInAdapter()>
+
+==>Problematic_Backward<ohos.multimodalinput.event.ManipulationEvent: ohos.multimodalinput.event.MmiPoint getPointerScreenPosition(int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.ManipulationEvent: ohos.multimodalinput.event.MmiPoint getPointerScreenPosition(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.BaseFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>, <com.lorentzos.flingswipe.SwipeFlingAdapterView: void <init>(ohos.app.Context)>, <com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context)>]
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]--><com.lorentzos.flingswipe.BaseFlingAdapterView: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void <init>(ohos.app.Context)>
+<ohos.agp.components.ComponentContainer: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context)>
+
+==>Problematic_Backward<ohos.media.image.ImageSource: ohos.media.image.ImageSource create(java.io.InputStream,ohos.media.image.ImageSource.SourceOptions)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>]
+<ohos.media.image.ImageSource: ohos.media.image.ImageSource create(java.io.InputStream,ohos.media.image.ImageSource.SourceOptions)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setStateChangedListener(ohos.agp.animation.Animator.StateChangedListener)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setStateChangedListener(ohos.agp.animation.Animator.StateChangedListener)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+
+==>Problematic_Backward<java.util.List: java.lang.Object get(int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>, <com.lorentzos.swipecards.BaseAdapter: java.lang.String getItem(int)>, <com.lorentzos.flingswipe.ProviderComponent: ohos.agp.components.Component getComponentAt(int)>, <com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>, <com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>]
+<java.util.List: java.lang.Object get(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>
+<java.util.List: java.lang.Object get(int)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: java.lang.String getItem(int)>
+<java.util.List: java.lang.Object get(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: ohos.agp.components.Component getComponentAt(int)>
+<java.util.List: java.lang.Object get(int)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>
+<java.util.List: java.lang.Object get(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>, <com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>]
+<ohos.agp.components.BaseItemProvider: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>
+<ohos.agp.components.BaseItemProvider: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setAlpha(float)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onScroll(float)>]
+<ohos.agp.components.Component: void setAlpha(float)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onScroll(float)>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setDuration(long)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>, <com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setDuration(long)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setDuration(long)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setTranslationX(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.agp.components.Component: void setTranslationX(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<java.lang.NullPointerException: void <init>()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: com.lorentzos.flingswipe.FlingCardListener getTopCardListener()>]
+<java.lang.NullPointerException: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: com.lorentzos.flingswipe.FlingCardListener getTopCardListener()>
+
+==>Problematic_Backward<ohos.aafwk.ability.AbilityPackage: void onInitialize()>:[4,5,6,7]
+[<com.lorentzos.swipecards.MyApplication: void onInitialize()>]
+<ohos.aafwk.ability.AbilityPackage: void onInitialize()>:[4,5,6,7]--><com.lorentzos.swipecards.MyApplication: void onInitialize()>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: void addDataSubscriber(ohos.agp.database.DataSetSubscriber)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void setItemProvider(ohos.agp.components.BaseItemProvider)>, <com.lorentzos.flingswipe.ProviderComponent: void onComponentBoundToWindow(ohos.agp.components.Component)>, <com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>]
+<ohos.agp.components.BaseItemProvider: void addDataSubscriber(ohos.agp.database.DataSetSubscriber)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void setItemProvider(ohos.agp.components.BaseItemProvider)>
+<ohos.agp.components.BaseItemProvider: void addDataSubscriber(ohos.agp.database.DataSetSubscriber)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void onComponentBoundToWindow(ohos.agp.components.Component)>
+<ohos.agp.components.BaseItemProvider: void addDataSubscriber(ohos.agp.database.DataSetSubscriber)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setContentPositionX(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>]
+<ohos.agp.components.Component: void setContentPositionX(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setCurveType(int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>, <com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setCurveType(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty setCurveType(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<ohos.agp.utils.Point: boolean equals(java.lang.Object)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void onRefreshed(ohos.agp.components.Component)>]
+<ohos.agp.utils.Point: boolean equals(java.lang.Object)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void onRefreshed(ohos.agp.components.Component)>
+
+==>Problematic_Backward<ohos.agp.components.Component: float getContentPositionX()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>, <com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>]
+<ohos.agp.components.Component: float getContentPositionX()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+<ohos.agp.components.Component: float getContentPositionX()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void removeAllComponents()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>]
+<ohos.agp.components.ComponentContainer: void removeAllComponents()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: int getChildCount()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>, <com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>, <com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>, <com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>, <com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>]
+<ohos.agp.components.ComponentContainer: int getChildCount()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>
+<ohos.agp.components.ComponentContainer: int getChildCount()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: boolean onArrange(int,int,int,int)>
+<ohos.agp.components.ComponentContainer: int getChildCount()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>
+<ohos.agp.components.ComponentContainer: int getChildCount()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>
+<ohos.agp.components.ComponentContainer: int getChildCount()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void setItemProvider(ohos.agp.components.BaseItemProvider)>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveByY(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveByY(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+
+==>Problematic_Backward<java.lang.Object: void <init>()>:[4,5,6,7]
+[<com.lorentzos.swipecards.BuildConfig: void <init>()>, <com.lorentzos.flingswipe.SwipeFlingAdapterView$1: void <init>(com.lorentzos.flingswipe.SwipeFlingAdapterView)>, <com.lorentzos.flingswipe.LinearRegression: void <init>(float[],float[])>, <com.lorentzos.swipecards.ResourceTable: void <init>()>, <com.lorentzos.flingswipe.FlingCardListener$1: void <init>(com.lorentzos.flingswipe.FlingCardListener,boolean)>, <com.lorentzos.swipecards.R$drawable: void <init>()>, <com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>, <com.lorentzos.flingswipe.BuildConfig: void <init>()>, <com.lorentzos.swipecards.R$string: void <init>()>, <com.lorentzos.swipecards.R: void <init>()>, <com.lorentzos.swipecards.BaseAdapter$MyComponentHolder: void <init>(ohos.agp.components.Component)>, <com.lorentzos.flingswipe.LogUtil: void <init>()>, <com.lorentzos.flingswipe.AttrUtils: void <init>()>, <com.lorentzos.flingswipe.ResourceTable: void <init>()>]
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.BuildConfig: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView$1: void <init>(com.lorentzos.flingswipe.SwipeFlingAdapterView)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: void <init>(float[],float[])>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.ResourceTable: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener$1: void <init>(com.lorentzos.flingswipe.FlingCardListener,boolean)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.R$drawable: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.BuildConfig: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.R$string: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.R: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter$MyComponentHolder: void <init>(ohos.agp.components.Component)>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.LogUtil: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: void <init>()>
+<java.lang.Object: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.ResourceTable: void <init>()>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: int getCount()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>, <com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>]
+<ohos.agp.components.BaseItemProvider: int getCount()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void onDraw(ohos.agp.components.Component,ohos.agp.render.Canvas)>
+<ohos.agp.components.BaseItemProvider: int getCount()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void addAllItem()>
+
+==>Problematic_Backward<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveByX(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>]
+<ohos.agp.animation.AnimatorProperty: ohos.agp.animation.AnimatorProperty moveByX(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+
+==>Problematic_Backward<ohos.agp.components.StackLayout.LayoutConfig: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: ohos.agp.components.ComponentContainer$LayoutConfig createLayoutConfig(ohos.app.Context,ohos.agp.components.AttrSet)>]
+<ohos.agp.components.StackLayout.LayoutConfig: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: ohos.agp.components.ComponentContainer$LayoutConfig createLayoutConfig(ohos.app.Context,ohos.agp.components.AttrSet)>
+
+==>Problematic_Backward<ohos.agp.components.Attr: float getFloatValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>]
+<ohos.agp.components.Attr: float getFloatValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>
+
+==>Problematic_Backward<java.lang.String: java.lang.String concat(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>]
+<java.lang.String: java.lang.String concat(java.lang.String)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onAdapterAboutToEmpty(int)>
+
+==>Problematic_Backward<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>]
+<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>
+
+==>Problematic_Backward<java.util.ArrayList: void <init>()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>, <com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<java.util.ArrayList: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+<java.util.ArrayList: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>
+
+==>Problematic_Backward<java.lang.Boolean: boolean parseBoolean(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.swipecards.BuildConfig: void <clinit>()>, <com.lorentzos.flingswipe.BuildConfig: void <clinit>()>]
+<java.lang.Boolean: boolean parseBoolean(java.lang.String)>:[4,5,6,7]--><com.lorentzos.swipecards.BuildConfig: void <clinit>()>
+<java.lang.Boolean: boolean parseBoolean(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.BuildConfig: void <clinit>()>
+
+==>Problematic_Backward<ohos.agp.window.dialog.ToastDialog: void <init>(ohos.app.Context)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void makeToast(ohos.app.Context,java.lang.String)>]
+<ohos.agp.window.dialog.ToastDialog: void <init>(ohos.app.Context)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void makeToast(ohos.app.Context,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void postLayout()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView$AdapterDataSetObserver: void onChanged()>, <com.lorentzos.flingswipe.SwipeFlingAdapterView$AdapterDataSetObserver: void onInvalidated()>, <com.lorentzos.flingswipe.SwipeFlingAdapterView: void postLayout()>]
+<ohos.agp.components.Component: void postLayout()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView$AdapterDataSetObserver: void onChanged()>
+<ohos.agp.components.Component: void postLayout()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView$AdapterDataSetObserver: void onInvalidated()>
+<ohos.agp.components.Component: void postLayout()>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void postLayout()>
+
+==>Problematic_Backward<ohos.agp.components.Attr: boolean getBoolValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>]
+<ohos.agp.components.Attr: boolean getBoolValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: void notifyDataSetItemRemoved(int)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void removeFirstObjectInAdapter()>]
+<ohos.agp.components.BaseItemProvider: void notifyDataSetItemRemoved(int)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void removeFirstObjectInAdapter()>
+
+==>Problematic_Backward<java.lang.IllegalArgumentException: void <init>(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter$MyComponentHolder: void <init>(ohos.agp.components.Component)>, <com.lorentzos.flingswipe.LinearRegression: void <init>(float[],float[])>]
+<java.lang.IllegalArgumentException: void <init>(java.lang.String)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter$MyComponentHolder: void <init>(ohos.agp.components.Component)>
+<java.lang.IllegalArgumentException: void <init>(java.lang.String)>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: void <init>(float[],float[])>
+
+==>Problematic_Backward<ohos.media.image.ImageSource: ohos.media.image.PixelMap createPixelmap(ohos.media.image.ImageSource.DecodingOptions)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>]
+<ohos.media.image.ImageSource: ohos.media.image.PixelMap createPixelmap(ohos.media.image.ImageSource.DecodingOptions)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: ohos.agp.components.Component findComponentById(int)>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>, <com.lorentzos.swipecards.MainAbility: void onScroll(float)>]
+<ohos.agp.components.Component: ohos.agp.components.Component findComponentById(int)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>
+<ohos.agp.components.Component: ohos.agp.components.Component findComponentById(int)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onScroll(float)>
+
+==>Problematic_Backward<ohos.agp.components.BaseItemProvider: java.lang.Object getItem(int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>]
+<ohos.agp.components.BaseItemProvider: java.lang.Object getItem(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.SwipeFlingAdapterView: void setTopView()>
+
+==>Problematic_Backward<ohos.agp.components.Attr: long getLongValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>]
+<ohos.agp.components.Attr: long getLongValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>
+
+==>Problematic_Backward<ohos.global.resource.ResourceManager: ohos.global.resource.Resource getResource(int)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>]
+<ohos.global.resource.ResourceManager: ohos.global.resource.Resource getResource(int)>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+
+==>Problematic_Backward<ohos.agp.window.dialog.ToastDialog: ohos.agp.window.dialog.ToastDialog setText(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void makeToast(ohos.app.Context,java.lang.String)>]
+<ohos.agp.window.dialog.ToastDialog: ohos.agp.window.dialog.ToastDialog setText(java.lang.String)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void makeToast(ohos.app.Context,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setRotation(float)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.agp.components.Component: void setRotation(float)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<ohos.multimodalinput.event.MmiPoint: float getX()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>]
+<ohos.multimodalinput.event.MmiPoint: float getX()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean onTouchEvent(ohos.agp.components.Component,ohos.multimodalinput.event.TouchEvent)>
+
+==>Problematic_Backward<ohos.aafwk.ability.Ability: void <init>()>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void <init>()>]
+<ohos.aafwk.ability.Ability: void <init>()>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void <init>()>
+
+==>Problematic_Backward<ohos.agp.components.ComponentContainer: void setArrangeListener(ohos.agp.components.ComponentContainer.ArrangeListener)>:[5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>]
+<ohos.agp.components.ComponentContainer: void setArrangeListener(ohos.agp.components.ComponentContainer.ArrangeListener)>:[5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+
+==>Problematic_Backward<ohos.agp.animation.Animator: void start()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>, <com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>]
+<ohos.agp.animation.Animator: void start()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void onSelected(boolean,float,long)>
+<ohos.agp.animation.Animator: void start()>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: boolean resetCardViewOnStack()>
+
+==>Problematic_Backward<ohos.agp.components.Text: void setText(java.lang.String)>:[4,5,6,7]
+[<com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>]
+<ohos.agp.components.Text: void setText(java.lang.String)>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: ohos.agp.components.Component getComponent(int,ohos.agp.components.Component,ohos.agp.components.ComponentContainer)>
+
+==>Problematic_Backward<java.util.List: int size()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>, <com.lorentzos.swipecards.BaseAdapter: int getCount()>, <com.lorentzos.flingswipe.ProviderComponent: ohos.agp.components.Component getComponentAt(int)>, <com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>]
+<java.util.List: int size()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void insertItem(int)>
+<java.util.List: int size()>:[4,5,6,7]--><com.lorentzos.swipecards.BaseAdapter: int getCount()>
+<java.util.List: int size()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: ohos.agp.components.Component getComponentAt(int)>
+<java.util.List: int size()>:[4,5,6,7]--><com.lorentzos.flingswipe.ProviderComponent: void removeItem(int)>
+
+==>Problematic_Backward<java.lang.StringBuilder: void <init>()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>]
+<java.lang.StringBuilder: void <init>()>:[4,5,6,7]--><com.lorentzos.flingswipe.LinearRegression: java.lang.String toString()>
+
+==>Problematic_Backward<java.lang.Math: double toRadians(double)>:[4,5,6,7]
+[<com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>]
+<java.lang.Math: double toRadians(double)>:[4,5,6,7]--><com.lorentzos.flingswipe.FlingCardListener: void <init>(ohos.agp.components.ComponentContainer,ohos.agp.components.Component,java.lang.Object,float,com.lorentzos.flingswipe.FlingCardListener$FlingListener)>
+
+==>Problematic_Backward<ohos.agp.utils.Color: int getValue()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<ohos.agp.utils.Color: int getValue()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]
+[<com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>, <com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>, <com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>, <com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>, <com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>, <com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>, <com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>]
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: boolean getBooleanFromAttr(ohos.agp.components.AttrSet,java.lang.String,boolean)>
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getColorFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getIntFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: ohos.media.image.PixelMap getPixelMap(ohos.app.Context,int)>
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: long getLongFromAttr(ohos.agp.components.AttrSet,java.lang.String,long)>
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: java.lang.String getStringFromAttr(ohos.agp.components.AttrSet,java.lang.String,java.lang.String)>
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: float getFloatFromAttr(ohos.agp.components.AttrSet,java.lang.String,float)>
+<java.lang.Throwable: java.lang.String getMessage()>:[4,5,6,7]--><com.lorentzos.flingswipe.AttrUtils: int getDimensionFromAttr(ohos.agp.components.AttrSet,java.lang.String,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setClickedListener(ohos.agp.components.Component.ClickedListener)>:[4,5,6,7]
+[<com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.agp.components.Component: void setClickedListener(ohos.agp.components.Component.ClickedListener)>:[4,5,6,7]--><com.lorentzos.swipecards.MainAbility: void onStart(ohos.aafwk.content.Intent)>

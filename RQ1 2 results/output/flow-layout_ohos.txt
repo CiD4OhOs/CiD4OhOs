@@ -1,0 +1,72 @@
+Compatible and target 45
+next file is Haps/flow-layout_ohos/classes.dex
+Soot started on Thu Dec 09 16:34:55 CST 2021
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Transforming Transforming com.huawei.mylibrary.BuildConfig... 
+Transforming com.huawei.myapplication.slice.MainAbilitySlice... 
+com.huawei.myapplication.MyApplication... 
+Transforming com.huawei.mylibrary.FlowAdapter... 
+Transforming com.huawei.mylibrary.FlowAdapter$FlowViewHolder... 
+Transforming com.huawei.mylibrary.FlowLayout$Adapter... 
+Transforming com.huawei.myapplication.ResourceTable... 
+Transforming com.huawei.mylibrary.ResourceTable... 
+Transforming com.huawei.myapplication.BuildConfig... 
+Transforming com.huawei.myapplication.MainAbility... 
+Transforming com.huawei.mylibrary.FlowLayout... 
+Transforming com.huawei.mylibrary.FlowLayout$ViewHolder... 
+Soot finished on Thu Dec 09 16:34:56 CST 2021
+Soot has run for 0 min. 0 sec.
+next file is Haps/flow-layout_ohos/entry_debug_signed_entry.apk
+Soot started on Thu Dec 09 16:34:56 CST 2021
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.os.Bundle is a phantom class!
+Warning: ohos.abilityshell.AbilityShellActivity is a phantom class!
+Warning: ohos.abilityshell.HarmonyApplication is a phantom class!
+Transforming Transforming com.huawei.myapplication.R$drawable... 
+com.huawei.myapplication.R$string... 
+Transforming com.huawei.myapplication.ShellMyApplication... 
+Transforming com.huawei.myapplication.R... 
+Transforming com.huawei.myapplication.MainAbilityShellActivity... 
+Soot finished on Thu Dec 09 16:34:56 CST 2021
+Soot has run for 0 min. 0 sec.
+--------------------------------------------------------------------------------------------------------
+Declared Min Sdk version is: 4
+Declared Target Sdk version is: 5
+Declared Max Sdk version is:  at the moment there is no such one
+Collected 1 OhOs APIs in the primary DEX file
+Collected 61 OhOs APIs in the secondary DEX files
+SDK Check:false
+Found 0 Android APIs (for forward compatibility) that are accessed with protection (SDK Check)
+Found 0 Android APIs (for forward compatibility) that are accessed problematically 
+Found 0 Android APIs (for backward compatibility) that are accessed with protection (SDK Check)
+Found 6 Android APIs (for backward compatibility) that are accessed problematically 
+
+==>Problematic_Backward<ohos.agp.components.Component.EstimateSpec: int getSize(int)>:[5,6,7]
+[<com.huawei.mylibrary.FlowLayout: boolean onEstimateSize(int,int)>]
+<ohos.agp.components.Component.EstimateSpec: int getSize(int)>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: boolean onEstimateSize(int,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component.EstimateSpec: int getMode(int)>:[5,6,7]
+[<com.huawei.mylibrary.FlowLayout: boolean onEstimateSize(int,int)>]
+<ohos.agp.components.Component.EstimateSpec: int getMode(int)>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: boolean onEstimateSize(int,int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: int getEstimatedHeight()>:[5,6,7]
+[<com.huawei.mylibrary.FlowLayout: int[] helper(int)>]
+<ohos.agp.components.Component: int getEstimatedHeight()>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: int[] helper(int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setEstimateSizeListener(ohos.agp.components.Component.EstimateSizeListener)>:[5,6,7]
+[<com.huawei.mylibrary.FlowLayout: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>, <com.huawei.mylibrary.FlowLayout: void <init>(ohos.app.Context)>, <com.huawei.mylibrary.FlowLayout: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>]
+<ohos.agp.components.Component: void setEstimateSizeListener(ohos.agp.components.Component.EstimateSizeListener)>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: void <init>(ohos.app.Context,ohos.agp.components.AttrSet,java.lang.String)>
+<ohos.agp.components.Component: void setEstimateSizeListener(ohos.agp.components.Component.EstimateSizeListener)>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: void <init>(ohos.app.Context)>
+<ohos.agp.components.Component: void setEstimateSizeListener(ohos.agp.components.Component.EstimateSizeListener)>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: void <init>(ohos.app.Context,ohos.agp.components.AttrSet)>
+
+==>Problematic_Backward<ohos.agp.components.Component: int getEstimatedWidth()>:[5,6,7]
+[<com.huawei.mylibrary.FlowLayout: int[] helper(int)>]
+<ohos.agp.components.Component: int getEstimatedWidth()>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: int[] helper(int)>
+
+==>Problematic_Backward<ohos.agp.components.Component: void setEstimatedSize(int,int)>:[5,6,7]
+[<com.huawei.mylibrary.FlowLayout: boolean onEstimateSize(int,int)>]
+<ohos.agp.components.Component: void setEstimatedSize(int,int)>:[5,6,7]--><com.huawei.mylibrary.FlowLayout: boolean onEstimateSize(int,int)>

@@ -1,0 +1,60 @@
+Compatible and target 45
+next file is hapFromShop/weibo/feature_com.sina.weibo.harmonyos_5/classes.dex
+Soot started on Thu Mar 31 20:10:12 CST 2022
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Transforming com.sina.weibo.harmonyos.videoso.ResourceTable... 
+Transforming com.sina.weibo.harmonyos.videoso.a... 
+Transforming com.sina.weibo.app.rpc.videoso.RpcServiceAbility... 
+Transforming com.sina.weibo.harmonyos.videoso.VideoDispatcherPageAbility... 
+Transforming com.sina.weibo.harmonyos.videoso.VideoSoApplication... 
+Soot finished on Thu Mar 31 20:10:17 CST 2022
+Soot has run for 0 min. 5 sec.
+next file is hapFromShop/weibo/feature_com.sina.weibo.harmonyos_5/entry_videoso_release_signed_feature.apk
+Soot started on Thu Mar 31 20:10:17 CST 2022
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.os.Bundle is a phantom class!
+Warning: ohos.abilityshell.HarmonyApplication is a phantom class!
+Warning: ohos.abilityshell.AbilityShellActivity is a phantom class!
+Warning: ohos.abilityshell.AbilityShellService is a phantom class!
+Transforming com.sina.weibo.app.rpc.videoso.RpcServiceAbilityShellService... 
+Transforming com.sina.weibo.harmonyos.R$drawable... 
+Transforming com.sina.weibo.harmonyos.R$string... 
+Transforming com.sina.weibo.harmonyos.videoso.ShellVideoSoApplication... 
+Transforming com.sina.weibo.harmonyos.videoso.VideoDispatcherPageAbilityShellActivity... 
+Transforming com.sina.weibo.harmonyos.R... 
+Soot finished on Thu Mar 31 20:10:18 CST 2022
+Soot has run for 0 min. 0 sec.
+next file is hapFromShop/weibo/feature_com.sina.weibo.harmonyos_5/entry_release_signed_cut_entry.apk
+Soot started on Thu Mar 31 20:10:18 CST 2022
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.os.Bundle is a phantom class!
+Warning: ohos.abilityshell.HarmonyApplication is a phantom class!
+Warning: ohos.abilityshell.AbilityShellActivity is a phantom class!
+Transforming com.sina.weibo.harmonyos.R$drawable... 
+Transforming com.sina.weibo.entry.splash.EntryPageAbilityShellActivity... 
+Transforming com.sina.weibo.entry.ShellEntryApplication... 
+Transforming com.sina.weibo.harmonyos.R$string... 
+Transforming com.sina.weibo.harmonyos.R... 
+Soot finished on Thu Mar 31 20:10:18 CST 2022
+Soot has run for 0 min. 0 sec.
+--------------------------------------------------------------------------------------------------------
+Declared Min Sdk version is: 4
+Declared Target Sdk version is: 5
+Declared Max Sdk version is:  at the moment there is no such one
+Collected 1 OhOs APIs in the primary DEX file
+Collected 10 OhOs APIs in the secondary DEX files
+SDK Check:false
+Found 0 Android APIs (for forward compatibility) that are accessed with protection (SDK Check)
+Found 0 Android APIs (for forward compatibility) that are accessed problematically 
+Found 0 Android APIs (for backward compatibility) that are accessed with protection (SDK Check)
+Found 1 Android APIs (for backward compatibility) that are accessed problematically 
+
+==>Problematic_Backward<ohos.aafwk.content.Intent: ohos.utils.Sequenceable getSequenceableParam(java.lang.String)>:[5,6,7]
+[<com.sina.weibo.harmonyos.videoso.VideoDispatcherPageAbility: void onStart(ohos.aafwk.content.Intent)>]
+<ohos.aafwk.content.Intent: ohos.utils.Sequenceable getSequenceableParam(java.lang.String)>:[5,6,7]--><com.sina.weibo.harmonyos.videoso.VideoDispatcherPageAbility: void onStart(ohos.aafwk.content.Intent)>

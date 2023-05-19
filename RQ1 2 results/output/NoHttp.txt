@@ -1,0 +1,13 @@
+Compatible and target 55
+next file is C:\Users\Matt\Desktop\ToConclude\errorHaps\NoHttp\classes.dex
+Soot started on Thu Dec 09 19:42:12 CST 2021
+Using 'C:\\Users\\Matt\\Desktop/ohos-frameworkversion\ohos-5\framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.os.Build$VERSION is a phantom class!
+Warning: android.util.Log is a phantom class!
+Warning: javax.annotation.Nullable is a phantom class!
+Warning: javax.annotation.ParametersAreNonnullByDefault is a phantom class!
+Warning: org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement is a phantom class!
+Warning: org.conscrypt.Conscrypt is a phantom class!
+Warning: org.conscrypt.OpenSSLProvider is a phantom class!

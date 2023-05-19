@@ -1,0 +1,38 @@
+Compatible and target 45
+next file is hapFromShop/weibo/feature_com.sina.weibo.harmonyos_7/classes.dex
+Soot started on Thu Mar 31 20:10:28 CST 2022
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Transforming com.sina.weibo.entry.ResourceTable... 
+Transforming com.sina.weibo.entry.EntryApplication... 
+Transforming com.sina.weibo.entry.a... 
+Transforming com.sina.weibo.entry.splash.EntryPageAbility... 
+Soot finished on Thu Mar 31 20:10:33 CST 2022
+Soot has run for 0 min. 5 sec.
+next file is hapFromShop/weibo/feature_com.sina.weibo.harmonyos_7/entry_release_signed_entry.apk
+Soot started on Thu Mar 31 20:10:33 CST 2022
+Using 'ohos-framework/ohos-5/framework.jar' as android.jar
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.os.Bundle is a phantom class!
+Warning: ohos.abilityshell.HarmonyApplication is a phantom class!
+Warning: ohos.abilityshell.AbilityShellActivity is a phantom class!
+Transforming com.sina.weibo.entry.splash.EntryPageAbilityShellActivity... 
+Transforming com.sina.weibo.harmonyos.R$drawable... 
+Transforming com.sina.weibo.entry.ShellEntryApplication... 
+Transforming com.sina.weibo.harmonyos.R$string... 
+Transforming com.sina.weibo.harmonyos.R... 
+Soot finished on Thu Mar 31 20:10:34 CST 2022
+Soot has run for 0 min. 0 sec.
+--------------------------------------------------------------------------------------------------------
+Declared Min Sdk version is: 4
+Declared Target Sdk version is: 5
+Declared Max Sdk version is:  at the moment there is no such one
+Collected 1 OhOs APIs in the primary DEX file
+Collected 24 OhOs APIs in the secondary DEX files
+SDK Check:false
+Found 0 Android APIs (for forward compatibility) that are accessed with protection (SDK Check)
+Found 0 Android APIs (for forward compatibility) that are accessed problematically 
+Found 0 Android APIs (for backward compatibility) that are accessed with protection (SDK Check)
+Found 0 Android APIs (for backward compatibility) that are accessed problematically 
